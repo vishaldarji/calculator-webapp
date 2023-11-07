@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><h1>calculator</h1></div>
+
+      <div class="output">
+        <input type="text" placeholder="0" disabled id="input" />
+      </div>
+      <div class="flexcontainer">
+        <div onClick="clearScreen()">AC</div>
+        <div>
+          <i
+            onClick="backspace()"
+            data-number="Del"
+            class="fa-solid fa-delete-left"
+          ></i>
+        </div>
+        <div>
+          <i onClick="Click()" data-number="%" class="fa-solid fa-percent"></i>
+        </div>
+        <div class="B">
+          <i onClick="Click()" data-number="/" class="fa-solid fa-divide"></i>
+        </div>
+        <div onClick="Click()" data-number="7">7</div>
+        <div onClick="Click()" data-number="8">8</div>
+        <div onClick="Click()" data-number="9">9</div>
+        <div class="B">
+          <i onClick="Click()" data-number="*" class="fa-solid fa-xmark"></i>
+        </div>
+        <div onClick="Click()" data-number="4">4</div>
+        <div onClick="Click()" data-number="5">5</div>
+        <div onClick="Click()" data-number="6">6</div>
+        <div class="B">
+          <i onClick="Click()" data-number="-" class="fa-solid fa-minus"></i>
+        </div>
+        <div onClick="Click()" data-number="1">1</div>
+        <div onClick="Click()" data-number="2">2</div>
+        <div onClick="Click()" data-number="3">3</div>
+
+        <div class="B">
+          <i onClick="Click()" data-number="+" class="fa-solid fa-plus"></i>
+        </div>
+
+        <div data-number="r">
+          <i
+            onClick="Click()"
+            data-number="R"
+            class="fa-sharp fa-solid fa-rotate"
+          ></i>
+        </div>
+        <div onClick="Click()" data-number="0">0</div>
+        <div onClick="Click()" data-number=".">.</div>
+        <div class="B R">
+          <i onClick="solve()" data-number="=" class="fa-solid fa-equals"></i>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

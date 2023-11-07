@@ -1,0 +1,48 @@
+.container{
+    width: 380px;
+    text-align: center;
+    margin: auto;
+    background-color:#161414;
+    color: aliceblue;
+}
+h1{
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    color: lightslategrey;
+}
+#input{
+    text-align: right;
+    /* margin: 2px 20px ; */
+    background-color: #161414;
+    border: none;
+    color: white;
+    /* width: 100px; */
+    font-size: 30px;
+
+}
+
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+.flexcontainer > div{
+    font-size: 25px;
+    width: 70px;
+    line-height: 65px;
+    margin: 10px;
+
+}
+div .B{
+    border: 2px solid #161414;
+    background-color: #161414;
+    border-radius: 100px;
+}
+div .R{
+    background-color: red;
+}
